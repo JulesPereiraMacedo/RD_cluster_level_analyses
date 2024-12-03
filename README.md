@@ -15,7 +15,7 @@ To run all the files, start to run the package.R files to install all the packag
 ### Executing programs
 This simulation study has 216 scenarios.
 
-For each R files take care to change your file path where you want the simulation to be saved. It is named “Base_file =” in the R files (path in line 6 in R file 1_Workspace_Sim1.R, for example).
+For each R files take care to change your file path where you want the simulation to be saved. It is named “Base_file =” in the R files (path in line 1675 in R file 1_Workspace_cluster_simu.R, for example).
 
 We have 7 files, numeroted from 1 to 4. It needs to be run in the right order (1 → 4). And for the files 3a, 3b, 3c and 3d they can be run simultaneously
 
