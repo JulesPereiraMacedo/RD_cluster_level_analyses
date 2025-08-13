@@ -19,8 +19,9 @@ For each R files take care to change your file path where you want the simulatio
 
 We have 7 files, numeroted from 1 to 4. It needs to be run in the right order (1 → 4). And for the files 3a, 3b, 3c and 3d they can be run simultaneously
 
-"1_Workspace_cluster_simu":
-This R file create a R workspace. You will have to load it for each of the following R files. All the functions used are in this file, with comments, and also this file creates “list” variables "Scenarios_%n" from 1 to 216,  which correspond to the scenarios parameters for each scenarios.
+"1_..._Workspace":
+These R files create a R workspace. You will have to load it for each of the following R files. All the functions used are in this file, with comments, and also this file creates “list” variables "Scenarios_%n" from 1 to 216,  which correspond to the scenarios parameters for each scenarios.
+The 2nd workspace is used to match our data with the function aldready done by Balzer and all. These function are available at: https://github.com/LauraBalzer/tmle4rcts
 
 "2_Data_cluster":
 This R file creates and saves all the dataset (1000 dataset for each of the 216 scenarios).
@@ -37,6 +38,15 @@ This R file does the analysis for the G-computation approach, adjusting on indiv
 
 "3_d_Analyse_Gcomp_both":
 This R file does the analysis for the G-computation approach, adjusting on both level of covariates (individual and cluster levels). This method is implemented in the Workspace file.
+
+"3_e_Analyse_GC_indep":
+This R file does the analysis for the G-computation approach, adjusting on both level AND only individual level covariates. This method is implemented in the Workspace file.
+
+"3_f_Analyse_TMLE":
+This R file does the analysis for the Adaptative Pre Specification (APS) TMLE approach, using the functions already made by Balzer and al. available at (https://github.com/LauraBalzer/tmle4rcts) adjusting on both level of covariates (individual and cluster levels). All methods are implemented in the Workspace file.
+
+"3_g_Analyse_TMLE":
+This R file does the analysis for the Adaptative Pre Specification (APS) TMLE approach, using the functions already made by Balzer and al. available at (https://github.com/LauraBalzer/tmle4rcts) adjusting on only individual covariates. All methods are implemented in the Workspace file.
 
 ## Help
 Users should contact pereiramacedo@univ-tours.fr (Pereira Macedo JA) if they have issues for running the programs.
